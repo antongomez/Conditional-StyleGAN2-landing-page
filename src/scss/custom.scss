@@ -1,0 +1,25 @@
+@import "colors";
+
+@import "bootstrap/scss/bootstrap.scss";
+
+$sizes: (
+  25: 25%,
+  50: 50%,
+  60: 60%,
+  75: 75%,
+  90: 90%,
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @each $size, $length in $sizes {
+    @include media-breakpoint-up($breakpoint) {
+      .mw-#{$breakpoint}-#{$size} {
+        max-width: $length !important;
+      }
+    }
+
+    .mw-#{$size} {
+      max-width: $length !important;
+    }
+  }
+}

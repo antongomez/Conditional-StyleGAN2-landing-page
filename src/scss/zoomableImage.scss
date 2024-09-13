@@ -1,0 +1,39 @@
+.img-mask {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .img-mask {
+    max-height: 75vh;
+  }
+}
+
+.img-mask .zoomableImageOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img-mask:hover .zoomableImageOverlay {
+  opacity: 1;
+}
+
+.zoomedImg {
+  max-height: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .zoomedImg {
+    flex-direction: row;
+    align-items: normal;
+  }
+}
