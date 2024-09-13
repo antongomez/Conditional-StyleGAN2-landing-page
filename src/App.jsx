@@ -10,7 +10,7 @@ export const App = () => {
       {/*Hero Section*/}
       <Container
         fluid
-        className="vh-100 d-flex flex-column justify-content-center align-items-center"
+        className="vh-100 d-flex flex-column justify-content-center align-items-center text-center mw-lg-75"
       >
         <h1>
           Advanced GAN for Multispectral Image Classification and Generation
@@ -329,7 +329,7 @@ export const App = () => {
       </Container>
       <hr />
       {/*Usage Section*/}
-      <Container fluid id="usage" className="bg-dark text-white py-5">
+      {/* <Container fluid id="usage" className="bg-dark text-white py-5">
         <Row className="d-flex justify-content-center align-items-center">
           <Col xs={12} lg={6} className="p-0">
             <img
@@ -352,7 +352,7 @@ export const App = () => {
       </Container>
       <hr />
       {/*Applications Section*/}
-      <Container fluid id="applications" className="py-5">
+      {/*<Container fluid id="applications" className="py-5">
         <Row className="d-flex justify-content-center align-items-center">
           <Col xs={12} lg={6} className="p-0">
             <h2>Applications</h2>
@@ -374,7 +374,7 @@ export const App = () => {
         </Row>
       </Container>
 
-      <hr />
+      <hr /> */}
       {/*Contributing Section*/}
       <Container
         fluid
