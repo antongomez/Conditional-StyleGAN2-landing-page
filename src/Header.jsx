@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Container, Navbar, Nav, Offcanvas, Col } from "react-bootstrap";
 import { Github } from "react-bootstrap-icons";
 
 export const Header = () => {
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  const toggleButtonRef = useRef(null);
+
   return (
     <Navbar
       expand="md"
@@ -17,9 +21,16 @@ export const Header = () => {
           </Navbar.Brand>
         </Col>
 
-        <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
+        <Navbar.Toggle
+          ref={toggleButtonRef}
+          aria-controls="offcanvasNavbar-expand-md"
+          onClick={() => setShowOffcanvas(!showOffcanvas)}
+        />
 
         <Navbar.Offcanvas
+          show={showOffcanvas}
+          onHide={() => setShowOffcanvas(false)}
+          restoreFocus={false}
           id="offcanvasNavbar-expand-md"
           aria-labelledby="offcanvasNavbarLabel-expand-md"
           placement="start"
@@ -32,14 +43,39 @@ export const Header = () => {
           </Offcanvas.Header>
           <Offcanvas.Body className="text-nowrap">
             <Nav className="justify-content-center flex-grow-1 pe-3">
-              <Nav.Link href="#description">Description</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#results">Results</Nav.Link>
-              <Nav.Link href="#usage">Usage</Nav.Link>
-              <Nav.Link href="#applications">Applications</Nav.Link>
-              <Nav.Link href="#contributing">Contributing</Nav.Link>
-
-              <Nav.Link href="#license">License</Nav.Link>
+              <Nav.Link
+                onClick={() => setShowOffcanvas(false)}
+                href="#description"
+              >
+                Description
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => setShowOffcanvas(false)}
+                href="#features"
+              >
+                Features
+              </Nav.Link>
+              <Nav.Link onClick={() => setShowOffcanvas(false)} href="#results">
+                Results
+              </Nav.Link>
+              <Nav.Link onClick={() => setShowOffcanvas(false)} href="#usage">
+                Usage
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => setShowOffcanvas(false)}
+                href="#applications"
+              >
+                Applications
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => setShowOffcanvas(false)}
+                href="#contributing"
+              >
+                Contributing
+              </Nav.Link>
+              <Nav.Link onClick={() => setShowOffcanvas(false)} href="#license">
+                License
+              </Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
