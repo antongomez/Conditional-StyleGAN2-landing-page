@@ -23,3 +23,12 @@ $sizes: (
     }
   }
 }
+
+a {
+  color: map-get($theme-colors, "info");
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken(map-get($theme-colors, "info"), 10%);
+}
