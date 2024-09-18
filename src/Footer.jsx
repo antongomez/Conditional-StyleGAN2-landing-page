@@ -10,7 +10,9 @@ export const Footer = () => {
     >
       <Row className="justify-content-md-between justify-content-center align-items-center d-flex flex-column flex-md-row">
         <Col xs="auto" className="order-2 order-md-1">
-          <span>© 2024 Antón Gómez López, All rights reserved</span>
+          <span className="text-center">
+            © 2024 Antón Gómez López, All rights reserved
+          </span>
         </Col>
         <Col xs="auto" className="d-flex order-1 order-md-2 mb-2 mb-md-0">
           <Button

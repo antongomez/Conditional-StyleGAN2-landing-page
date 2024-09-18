@@ -7,11 +7,11 @@ import { CodeBox } from "./CodeBox";
 
 export const App = () => {
   return (
-    <Container fluid className="py-0 px-5 bg-dark text-white">
+    <Container fluid className="py-0 px-3 px-md-5 bg-dark text-white">
       {/*Hero Section*/}
       <Container
         fluid
-        className="vh-100 d-flex flex-column justify-content-center align-items-center text-center mw-lg-75"
+        className="p-0 vh-100 d-flex flex-column justify-content-center align-items-center text-center mw-lg-75"
       >
         <h1>
           Advanced GAN for Multispectral Image Classification and Generation
@@ -37,8 +37,8 @@ export const App = () => {
       </Container>
       <hr />
       {/*Description Section*/}
-      <Container fluid id="description" className="py-5">
-        <Row className="d-flex justify-content-center align-items-center">
+      <Container fluid id="description" className="py-5 px-0">
+        <Row className="d-flex justify-content-center align-items-center mx-0">
           <Col xs={12} lg={6} className="p-0 pe-lg-5 mb-5 mb-lg-0">
             <h2>Description</h2>
             <p className="fw-lighter mt-2">
@@ -107,13 +107,13 @@ export const App = () => {
       </Container>
       <hr />
       {/*Features Section*/}
-      <Container fluid id="features" className="bg-dark text-white py-5">
+      <Container fluid id="features" className="bg-dark text-white py-5 px-0">
         <h2>Features</h2>
         <Row
           xs={1}
           md={2}
           xl={4}
-          className="d-flex justify-content-center align-items-start pt-4"
+          className="d-flex justify-content-center align-items-start pt-4 mx-0"
         >
           <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
             <Col
@@ -208,8 +208,8 @@ export const App = () => {
       </Container>
       <hr />
       {/*Results Section*/}
-      <Container fluid id="results" className="py-5">
-        <Container fluid className="text-center mw-xl-60 mb-5">
+      <Container fluid id="results" className="py-5 px-0">
+        <Container fluid className="text-md-center mw-xl-60 mb-5 px-0">
           <h2>Results</h2>
           <p className="fw-lighter">
             A brief summary of the results obtained with the network is
@@ -221,12 +221,12 @@ export const App = () => {
         </Container>
         <Row
           lg={2}
-          className="d-flex justify-content-center align-items-center mb-5"
+          className="d-flex justify-content-center align-items-center mb-5 mx-0"
         >
           <Col
             xs={12}
             lg={6}
-            className="px-0 pe-lg-5 mb-5 mb-lg-0 d-flex flex-column align-items-center text-center"
+            className="px-0 pe-lg-5 mb-5 mb-lg-0 d-flex flex-column align-items-md-center text-start text-md-center"
           >
             <h3>Classification results with MNIST</h3>
             <p className="fw-lighter mt-2">
@@ -243,14 +243,14 @@ export const App = () => {
                 className=""
               />
             </Container>
-            <p className="fw-lighter mt-1">
+            <p className="fw-lighter mt-1 text-center">
               Confusion matrix with MNIST on training set
             </p>
           </Col>
           <Col
             xs={12}
             lg={6}
-            className="px-0 ps-lg-4 d-flex flex-column align-items-center text-center"
+            className="px-0 ps-lg-4 d-flex flex-column align-items-center text-start text-md-center"
           >
             <h3>Classification results with multispectral images</h3>
             <p className="fw-lighter mt-2">
@@ -267,14 +267,14 @@ export const App = () => {
                 className=""
               />
             </Container>
-            <p className="fw-lighter mt-1">
+            <p className="fw-lighter mt-1 text-center">
               Confusion matrix with multispectral images on validation set
             </p>
           </Col>
         </Row>
         <Container
           fluid
-          className="d-flex flex-column justify-content-center text-center px-0 mw-xl-60 mb-3"
+          className="d-flex flex-column justify-content-md-center text-start text-md-center px-0 mw-xl-60 mb-3"
         >
           <h3>Quality of generated images</h3>
           <p className="fw-lighter mt-2">
@@ -285,7 +285,7 @@ export const App = () => {
             MNIST dataset images.
           </p>
         </Container>
-        <Row md={2} className="justify-content-center mb-3">
+        <Row md={2} className="justify-content-center mb-3 mx-0">
           <Col xs={6} md={6} xl={5} xxl={4} className="pe-1 pe-md-2 pe-lg-4">
             <ZoomableImage
               imageSrc="/mnist_fakes.png"
@@ -305,7 +305,7 @@ export const App = () => {
             <p className="fw-lighter mt-1 text-center">Real MNIST images</p>
           </Col>
         </Row>
-        <Row md={2} className="justify-content-center">
+        <Row md={2} className="justify-content-center mx-0">
           <Col xs={6} md={6} xl={5} xxl={4} className="pe-1 pe-md-2 pe-lg-4">
             <ZoomableImage
               imageSrc="/oitaven_fakes.png"
@@ -330,7 +330,7 @@ export const App = () => {
       </Container>
       <hr />
       {/* Usage Section */}
-      <Container fluid id="usage" className="bg-dark text-white py-5">
+      <Container fluid id="usage" className="bg-dark text-white py-5 px-0">
         <h2>Usage</h2>
         <h3>Requirements</h3>
         <p className="fw-lighter">
@@ -365,7 +365,7 @@ export const App = () => {
           T4 GPU with 16GB of memory.
         </p>
         <h3>Data</h3>
-        <Row lg={2}>
+        <Row lg={2} className="mx-0">
           <Col lg={6} xl={6} className="mb-4 mb-lg-0">
             <p className="fw-lighter mt-2">
               For this tutorial, you need to download the multispectral image of
@@ -532,7 +532,7 @@ export const App = () => {
             </ol>
           </Col>
           <Col lg={6} xl={6} className="">
-            <Row md={2} className="justify-content-center">
+            <Row md={2} className="justify-content-center mx-0">
               <Col xs={6} md={4} lg={6}>
                 <ZoomableImage
                   imageSrc="/pavia_raw.png"
@@ -604,7 +604,7 @@ export const App = () => {
           training progresses, the quality of the generated images will improve
           significantly.
         </p>
-        <Row md={3} className="justify-content-center">
+        <Row md={3} className="justify-content-center mx-0">
           <Col xs={12} sm={9} md={4} xl={3}>
             <ZoomableImage
               imageSrc="/epoch_10.png"
@@ -713,7 +713,7 @@ export const App = () => {
           xs={1}
           md={2}
           xl={4}
-          className="d-flex justify-content-center align-items-start pt-4"
+          className="d-flex justify-content-center align-items-start pt-4 mx-0"
         >
           <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
             <Col
@@ -828,7 +828,11 @@ export const App = () => {
         className="py-5 d-flex flex-column align-items-center"
       >
         <h2>Contributing</h2>
-        <Row xs={1} md={2} className="mt-4 justify-content-center text-center">
+        <Row
+          xs={1}
+          md={2}
+          className="mt-4 justify-content-center text-center mx-0"
+        >
           <Col lg={5} xl={4} className="mb-3 mb-md-0 d-flex flex-column">
             <Button
               variant="transparent"
