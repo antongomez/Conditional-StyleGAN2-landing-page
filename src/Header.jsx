@@ -12,7 +12,7 @@ export const Header = () => {
       expand="md"
       bg="dark"
       data-bs-theme="dark"
-      className="border-bottom"
+      className="border-bottom m-0 mw-100"
     >
       <Container fluid className="bg-dark px-5 py-2">
         <Col xs="auto" xxl={2} className="p-0">

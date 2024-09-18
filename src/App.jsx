@@ -7,7 +7,7 @@ import { CodeBox } from "./CodeBox";
 
 export const App = () => {
   return (
-    <Container fluid className="py-0 px-3 px-md-5 bg-dark text-white">
+    <Container fluid className="py-0 px-3 px-md-5 bg-dark text-white mw-100">
       {/*Hero Section*/}
       <Container
         fluid
@@ -38,7 +38,7 @@ export const App = () => {
       <hr />
       {/*Description Section*/}
       <Container fluid id="description" className="py-5 px-0">
-        <Row className="d-flex justify-content-center align-items-center mx-0">
+        <Row className="d-flex justify-content-center align-items-center mx-0 w-100">
           <Col xs={12} lg={6} className="p-0 pe-lg-5 mb-5 mb-lg-0">
             <h2>Description</h2>
             <p className="fw-lighter mt-2">
