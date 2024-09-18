@@ -707,29 +707,120 @@ export const App = () => {
       </Container>
       <hr />
       {/*Applications Section*/}
-      {/*<Container fluid id="applications" className="py-5">
-        <Row className="d-flex justify-content-center align-items-center">
-          <Col xs={12} lg={6} className="p-0">
-            <h2>Applications</h2>
-            <p className="fw-lighter mt-2">
-              Conditional StyleGAN2 is a neural network that classifies and
-              generates multispectral images from 1 to 5 channels with precision
-              using a modified StyleGAN2 architecture. This project is a
-              collaboration between the University of California, Berkeley and
-              the University of California, Los Angeles.
-            </p>
+      <Container fluid id="applications" className="bg-dark text-white py-5">
+        <h2>Applications</h2>
+        <Row
+          xs={1}
+          md={2}
+          xl={4}
+          className="d-flex justify-content-center align-items-start pt-4"
+        >
+          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+            <Col
+              xs="auto"
+              className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
+            >
+              <div
+                className="bg-light d-flex align-items-center justify-content-center rounded-circle"
+                style={{ width: "60px", height: "60px" }}
+              >
+                <span className="text-primary fs-4">1</span>
+              </div>
+            </Col>
+            <Col className="p-0">
+              <h3>Remote Sensing and Environmental Monitoring</h3>
+              <p className="fw-lighter">
+                The network could be used for classifying multispectral remote
+                sensing images, making it suitable for tasks such as{" "}
+                <span className="fw-bolder">land cover classification</span>,
+                <span className="fw-bolder">environmental monitoring</span>, and
+                <span className="fw-bolder">disaster response</span>. For
+                example, it could assist in distinguishing between forests,
+                urban areas, and water bodies, or evaluating the effects of
+                natural disasters like floods or wildfires.
+              </p>
+            </Col>
           </Col>
-          <Col xs={12} lg={6} className="p-0">
-            <img
-              src="https://via.placeholder.com/600"
-              alt="Placeholder"
-              className="img-fluid"
-            />
+          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+            <Col
+              xs="auto"
+              className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
+            >
+              <div
+                className="bg-light d-flex align-items-center justify-content-center rounded-circle"
+                style={{ width: "60px", height: "60px" }}
+              >
+                <span className="text-primary fs-4">2</span>
+              </div>
+            </Col>
+            <Col className="p-0">
+              <h3>Precision Agriculture</h3>
+              <p className="fw-lighter">
+                The network could be used for{" "}
+                <span className="fw-bolder">crop health monitoring</span> and{" "}
+                <span className="fw-bolder">weed detection</span> in precision
+                agriculture. It can help identify early signs of plant stress or
+                disease, enabling farmers to optimize yields. Additionally, the
+                network could automate the detection of weeds, supporting more
+                efficient herbicide application and promoting sustainable
+                farming.
+              </p>
+            </Col>
+          </Col>
+          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+            <Col
+              xs="auto"
+              className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
+            >
+              <div
+                className="bg-light d-flex align-items-center justify-content-center rounded-circle"
+                style={{ width: "60px", height: "60px" }}
+              >
+                <span className="text-primary fs-4">3</span>
+              </div>
+            </Col>
+            <Col className="p-0">
+              <h3>Urban Planning and Development</h3>
+              <p className="fw-lighter">
+                The network could be applied to{" "}
+                <span className="fw-bolder">urban land use classification</span>{" "}
+                and <span className="fw-bolder">infrastructure monitoring</span>{" "}
+                by analyzing aerial or satellite images. This can assist urban
+                planners in mapping urban expansion, monitoring roads and
+                infrastructure development, and making decisions for sustainable
+                city growth.
+              </p>
+            </Col>
+          </Col>
+          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+            <Col
+              xs="auto"
+              className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
+            >
+              <div
+                className="bg-light d-flex align-items-center justify-content-center rounded-circle"
+                style={{ width: "60px", height: "60px" }}
+              >
+                <span className="text-primary fs-4">4</span>
+              </div>
+            </Col>
+            <Col className="p-0">
+              <h3>Data Augmentation and Synthetic Image Generation</h3>
+              <p className="fw-lighter">
+                The network could be used for{" "}
+                <span className="fw-bolder">data augmentation</span> by
+                generating synthetic images, particularly in cases of imbalanced
+                datasets. This allows it to create additional data for minority
+                classes, improving performance in tasks like{" "}
+                <span className="fw-bolder">training data generation</span> and
+                enhancing model accuracy when real-world data is limited.
+              </p>
+            </Col>
           </Col>
         </Row>
       </Container>
 
-      <hr /> */}
+      <hr />
       {/*Contributing Section*/}
       <Container
         fluid
