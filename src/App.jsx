@@ -389,8 +389,10 @@ export const App = () => {
               <a href="#" target="_blank" rel="noopener noreferrer">
                 OneDrive folder
               </a>
-              . Place the files in a folder named{" "}
-              <ResaltedText>data/PAVIA</ResaltedText> and make sure the
+              . This image is widely used in remote sensing and is in the public
+              domain. In this case, we will use an adaptation that has only 5
+              channels, instead of 103 channels. Place the files in a folder
+              named <ResaltedText>data/PAVIA</ResaltedText> and make sure the
               filenames are as follows:
             </p>
             <ul className="fw-lighter">
