@@ -115,7 +115,11 @@ export const App = () => {
           xl={4}
           className="d-flex justify-content-center align-items-start pt-4 mx-0"
         >
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 pe-md-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
@@ -138,7 +142,11 @@ export const App = () => {
               </p>
             </Col>
           </Col>
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 ps-md-3 px-xl-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
@@ -160,7 +168,11 @@ export const App = () => {
               </p>
             </Col>
           </Col>
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 pe-md-3 px-xl-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
@@ -182,7 +194,11 @@ export const App = () => {
               </p>
             </Col>
           </Col>
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 ps-md-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
@@ -713,7 +729,11 @@ export const App = () => {
           xl={4}
           className="d-flex justify-content-center align-items-start pt-4 mx-0"
         >
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 pe-md-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
@@ -739,7 +759,11 @@ export const App = () => {
               </p>
             </Col>
           </Col>
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 ps-md-3 px-xl-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
@@ -765,7 +789,11 @@ export const App = () => {
               </p>
             </Col>
           </Col>
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 pe-md-3 px-xl-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
@@ -790,7 +818,11 @@ export const App = () => {
               </p>
             </Col>
           </Col>
-          <Col md={6} xl={3} className="mb-3 mb-xl-0 d-flex flex-md-column">
+          <Col
+            md={6}
+            xl={3}
+            className="mb-3 mb-xl-0 d-flex flex-md-column px-0 ps-md-3"
+          >
             <Col
               xs="auto"
               className="p-0 mb-3 d-flex justify-content-center justify-content-md-start align-items-start me-4 me-md-0"
