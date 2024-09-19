@@ -17,8 +17,8 @@ export const App = () => {
           Advanced GAN for Multispectral Image Classification and Generation
         </h1>
         <p className="fw-lighter mt-2">
-          A Neural Network that Classifies and Generates Multispectral Images
-          from 1 to 5 Channels with Precision
+          A neural network that classifies and generates multispectral images
+          from 1 to any channels with precision
         </p>
         <Container className="d-flex justify-content-center mt-4">
           <Button variant="primary" className="me-2" href="#description">
