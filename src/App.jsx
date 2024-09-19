@@ -133,7 +133,7 @@ export const App = () => {
                 The network classifies multispectral images using a modified
                 StyleGAN2 architecture. To classify multispectral images, it is
                 necessary to preprocess them with a segmentation algorithm and
-                calculate the centers of the segmented regions to extract
+                calculate the centres of the segmented regions to extract
                 patches from each multispectral image.
               </p>
             </Col>
@@ -372,18 +372,10 @@ export const App = () => {
               Pavia University from this{" "}
               <a href="#" target="_blank" rel="noopener noreferrer">
                 OneDrive folder
-              </a>{" "}
-              or from the{" "}
-              <a
-                href="https://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Computational Intelligence Group website
-              </a>{" "}
-              at the University of the Basque Country. Place the files in a
-              folder named <ResaltedText>data/PAVIA</ResaltedText> and make sure
-              the filenames are as follows:
+              </a>
+              . Place the files in a folder named{" "}
+              <ResaltedText>data/PAVIA</ResaltedText> and make sure the
+              filenames are as follows:
             </p>
             <ul className="fw-lighter">
               <li>
@@ -406,7 +398,7 @@ export const App = () => {
               </li>
             </ul>
             <p className="fw-lighter mt-2">
-              The multispectral image of Pavia University contains 103 channels,
+              The multispectral image of Pavia University contains 5 channels,
               but RGB channels can be extracted to visualize the image in color.
               There are 9 classes in the ground truth image, represented by the
               following colors:
@@ -427,7 +419,7 @@ export const App = () => {
               </li>
               <li>
                 <Container fluid className="p-0 d-flex align-items-center">
-                  <span>Wastelan: green</span>
+                  <span>Meadows: green</span>
                   <div
                     style={{
                       backgroundColor: "#3cb44b",
@@ -440,7 +432,7 @@ export const App = () => {
               </li>
               <li>
                 <Container fluid className="p-0 d-flex align-items-center">
-                  <span>Building 1: yellow</span>
+                  <span>Gravel: yellow</span>
                   <div
                     style={{
                       backgroundColor: "#ffe119",
@@ -466,7 +458,7 @@ export const App = () => {
               </li>
               <li>
                 <Container fluid className="p-0 d-flex align-items-center">
-                  <span>Building 2: orange</span>
+                  <span>Metal: orange</span>
                   <div
                     style={{
                       backgroundColor: "#f58230",
@@ -479,7 +471,7 @@ export const App = () => {
               </li>
               <li>
                 <Container fluid className="p-0 d-flex align-items-center">
-                  <span>Wasteland 2: purple</span>
+                  <span>Bare soil: purple</span>
                   <div
                     style={{
                       backgroundColor: "#911eb4",
@@ -492,7 +484,7 @@ export const App = () => {
               </li>
               <li>
                 <Container fluid className="p-0 d-flex align-items-center">
-                  <span>Building 3: light blue</span>
+                  <span>Bitumen: light blue</span>
                   <div
                     style={{
                       backgroundColor: "#46f0f0",
@@ -505,7 +497,7 @@ export const App = () => {
               </li>
               <li>
                 <Container fluid className="p-0 d-flex align-items-center">
-                  <span>Car park: light purple</span>
+                  <span>Bricks: light purple</span>
                   <div
                     style={{
                       backgroundColor: "#f032e6",
@@ -573,7 +565,7 @@ export const App = () => {
         <p className="fw-lighter mt-2">
           First, the dataset will be loaded, consisting of a high-resolution
           multispectral image of Pavia University. The network uses 32x32 pixel
-          patches from the multispectral image, centered on the segments defined
+          patches from the multispectral image, centred on the segments defined
           in the <ResaltedText>pavia_university_seg_centers.raw</ResaltedText>{" "}
           file.
         </p>
@@ -643,9 +635,10 @@ export const App = () => {
         </Row>
         <p className="fw-lighter">
           After training is complete, you can generate images conditioned on
-          specific class labels. The <ResaltedText>test_G.py</ResaltedText>{" "}
-          script in the GitHub repository allows you to generate images for each
-          class in the dataset. This script accepts two parameters:
+          specific class labels. The{" "}
+          <ResaltedText>cstylegan2/test_G.py</ResaltedText> script in the GitHub
+          repository allows you to generate images for each class in the
+          dataset. This script accepts two parameters:
         </p>
         <ul className="fw-lighter">
           <li>
@@ -674,7 +667,7 @@ export const App = () => {
           time a model is saved. To identify the best model from the training
           process, you can use the{" "}
           <ResaltedText>select_best_model.py</ResaltedText> script. This script
-          analyzes the validation log files and selects the model with the
+          analyses the validation log files and selects the model with the
           highest average accuracy.
         </p>
         <CodeBox> python cstylegan2/select_best_model.py --name=PAVIA</CodeBox>
@@ -790,7 +783,7 @@ export const App = () => {
                 The network could be applied to{" "}
                 <span className="fw-bolder">urban land use classification</span>{" "}
                 and <span className="fw-bolder">infrastructure monitoring</span>{" "}
-                by analyzing aerial or satellite images. This can assist urban
+                by analysing aerial or satellite images. This can assist urban
                 planners in mapping urban expansion, monitoring roads and
                 infrastructure development, and making decisions for sustainable
                 city growth.
