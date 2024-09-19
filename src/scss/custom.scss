@@ -32,3 +32,8 @@ a {
 a:hover {
   color: darken(map-get($theme-colors, "info"), 10%);
 }
+
+.resalted-text {
+  background-color: lighten(map-get($theme-colors, "dark"), 5%);
+  font-family: monospace;
+}

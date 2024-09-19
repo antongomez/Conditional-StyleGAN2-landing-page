@@ -366,8 +366,8 @@ export const App = () => {
         </p>
         <h3>Data</h3>
         <Row lg={2} className="mx-0">
-          <Col lg={6} xl={6} className="mb-4 mb-lg-0">
-            <p className="fw-lighter mt-2">
+          <Col lg={6} xl={6} className="mb-4 mb-lg-0 px-0 pe-lg-2">
+            <p className="fw-lighter">
               For this tutorial, you need to download the multispectral image of
               Pavia University from this{" "}
               <a href="#" target="_blank" rel="noopener noreferrer">
@@ -528,7 +528,7 @@ export const App = () => {
               classification task.
             </p>
           </Col>
-          <Col lg={6} xl={6} className="">
+          <Col lg={6} xl={6} className="px-0 ps-lg-2">
             <Row md={2} className="justify-content-center mx-0">
               <Col xs={6} md={4} lg={6}>
                 <ZoomableImage
@@ -886,7 +886,7 @@ export const App = () => {
 
 const ResaltedText = ({ children }) => {
   return (
-    <span className="fw-bolder text-dark mx-1 px-1 pb-1 bg-light rounded-1">
+    <span className="text-light py-1 px-2 pb-1 rounded-1 resalted-text">
       {children}
     </span>
   );
