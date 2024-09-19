@@ -406,7 +406,7 @@ export const App = () => {
               </li>
             </ul>
             <p className="fw-lighter mt-2">
-              The multispectral image of Pavia University contains 5 channels,
+              The multispectral image of Pavia University contains 103 channels,
               but RGB channels can be extracted to visualize the image in color.
               There are 9 classes in the ground truth image, represented by the
               following colors:
@@ -530,6 +530,11 @@ export const App = () => {
                 </Container>
               </li>
             </ol>
+            <p className="fw-lighter">
+              There are some pixels in the ground truth in black color that
+              represent unknown classes. These pixels are not considered in the
+              classification task.
+            </p>
           </Col>
           <Col lg={6} xl={6} className="">
             <Row md={2} className="justify-content-center mx-0">
